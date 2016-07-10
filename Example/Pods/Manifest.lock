@@ -1,0 +1,16 @@
+PODS:
+  - Oberholz (0.1.0)
+
+DEPENDENCIES:
+  - Oberholz (from `../`)
+
+EXTERNAL SOURCES:
+  Oberholz:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Oberholz: a9ba6acacd0f1150322906045a3f6d4898077149
+
+PODFILE CHECKSUM: 10c06964f8874545d6e43d910d203aa4cff2b58f
+
+COCOAPODS: 1.0.1

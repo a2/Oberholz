@@ -1,0 +1,6 @@
+framework module Oberholz {
+  umbrella header "Oberholz-umbrella.h"
+
+  export *
+  module * { export * }
+}
