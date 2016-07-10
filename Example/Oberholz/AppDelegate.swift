@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Oberholz
-//
-//  Created by Alexsander Akers on 07/10/2016.
-//  Copyright (c) 2016 Alexsander Akers. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

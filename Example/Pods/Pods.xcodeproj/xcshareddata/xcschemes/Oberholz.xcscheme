@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25E2C9A5B97C8EE34A9E9CA356B5FA88"
+               BlueprintIdentifier = "5BE62482B1E3146E79FBFD00E55BD76A"
                BuildableName = "Oberholz.framework"
                BlueprintName = "Oberholz"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25E2C9A5B97C8EE34A9E9CA356B5FA88"
+            BlueprintIdentifier = "5BE62482B1E3146E79FBFD00E55BD76A"
             BuildableName = "Oberholz.framework"
             BlueprintName = "Oberholz"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25E2C9A5B97C8EE34A9E9CA356B5FA88"
-            BuildableName = "Oberholz.framework"
-            BlueprintName = "Oberholz"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

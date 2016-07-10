@@ -1,24 +1,7 @@
-//
-//  ViewController.swift
-//  Oberholz
-//
-//  Created by Alexsander Akers on 07/10/2016.
-//  Copyright (c) 2016 Alexsander Akers. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func dismissPresented(segue: UIStoryboardSegue) {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-
