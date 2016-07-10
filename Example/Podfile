@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Oberholz_Example' do
+  pod 'Oberholz', :path => '../'
+
+  target 'Oberholz_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
