@@ -12,6 +12,7 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
     let detailContainerView = UIView()
     var detailTopLayoutConstraint: NSLayoutConstraint?
     let handleView = OberholzHandleView()
+    var detailContainerStartingFrame: CGRect?
 
     public init(masterViewController: UIViewController, detailViewController: UIViewController) {
         self.masterViewController = masterViewController
@@ -26,6 +27,36 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
     @available(*, unavailable)
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func recognizedPanGesture(gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .Began:
+            detailContainerStartingFrame = detailContainerView.frame
+
+        case .Changed:
+            let translation = gesture.translationInView(gesture.view)
+
+            let minY: CGFloat = 40
+            let maxY = view.bounds.size.height - 100
+
+            var newFrame = detailContainerStartingFrame!
+            let newY = newFrame.origin.y + translation.y
+            newFrame.origin.y = min(max(newY, minY), maxY)
+            newFrame.size.height = view.bounds.size.height - newFrame.origin.y
+            detailContainerView.frame = newFrame
+
+            if let scrollView = gesture.view as? UIScrollView {
+                scrollView.contentOffset.y = max(minY - newY, -20)
+            }
+
+        case .Ended:
+            gesture.enabled = false
+            gesture.enabled = true
+
+        default:
+            break
+        }
     }
 
     // MARK:
@@ -54,6 +85,15 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
 
         detailViewController.view.frame = detailContainerView.bounds
         detailViewController.view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+
+        if let scrollView = detailViewController.view as? UIScrollView {
+            scrollView.contentInset.top = 20
+            scrollView.contentOffset = CGPoint(x: 0, y: -20)
+            scrollView.panGestureRecognizer.addTarget(self, action: #selector(recognizedPanGesture))
+        } else {
+            let panGesture = UIPanGestureRecognizer(target: self, action: #selector(recognizedPanGesture))
+            view.addGestureRecognizer(panGesture)
+        }
     }
 
     public override func updateViewConstraints() {
