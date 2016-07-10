@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.authors          = { 'Alexsander Akers' => 'me@a2.io',  'Patrick Balestra' => 'me@patrickbalestra.com'}
   s.source           = { :git => 'https://github.com/a2/Oberholz.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Oberholz/Classes/**/*'
 

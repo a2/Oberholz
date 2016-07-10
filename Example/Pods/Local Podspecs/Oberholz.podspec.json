@@ -1,22 +1,23 @@
 {
   "name": "Oberholz",
   "version": "0.1.0",
-  "summary": "A short description of Oberholz.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Oberholz",
+  "summary": "A semi-modal view controller.",
+  "description": "A semi-modal view controller similar to the one used in the iOS 10 Control Center.",
+  "homepage": "https://github.com/a2/Oberholz",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Alexsander Akers": "me@a2.io"
+    "Alexsander Akers": "me@a2.io",
+    "Patrick Balestra": "me@patrickbalestra.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Oberholz.git",
+    "git": "https://github.com/a2/Oberholz.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "Oberholz/Classes/**/*"
 }

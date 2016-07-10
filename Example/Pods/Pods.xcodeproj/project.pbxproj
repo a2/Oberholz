@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03069DA3579F8CAD4256E749306E5088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		1301184A1B201D892935ACF2A063E988 /* Pods-Oberholz_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F6615B2DCC5ABD59BAC89775822C40 /* Pods-Oberholz_Tests-dummy.m */; };
 		2723B7DA3DDCAD503AD4B496B1B75E6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2C55CAE07F33DB4F76F295D5E519FE4D /* Oberholz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11E249F12F314F9F3B358BE8808AD23 /* Oberholz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42D06502D7A1B0FA5E7226C1A9D99988 /* Pods-Oberholz_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9920B422686992E56BDA0FC939D35FCC /* Pods-Oberholz_Example-dummy.m */; };
-		610ABE1B530AA7A68358CE3178F7FF17 /* Oberholz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54ACBA2C7B46E3F0199B7E8B6628B5B /* Oberholz-dummy.m */; };
-		8324A84F1D32776C00B60492 /* OberholzTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324A84E1D32776C00B60492 /* OberholzTransitionController.swift */; };
-		8324A8511D32777100B60492 /* OberholzAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324A8501D32777100B60492 /* OberholzAnimationController.swift */; };
-		8324A8551D3279FC00B60492 /* OberholzStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324A8541D3279FC00B60492 /* OberholzStoryboardSegue.swift */; };
-		B257E50A4974BF5547777CAC894ECE59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8324A85B1D32916A00B60492 /* OberholzHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324A85A1D32916A00B60492 /* OberholzHandleView.swift */; };
+		8AE473EA57A018DB942D6F36E631294E /* Oberholz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11E249F12F314F9F3B358BE8808AD23 /* Oberholz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3F236B10F77617A160834940EAEA5F /* OberholzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92C6AECBE5A84034126BD6A59F266D /* OberholzViewController.swift */; };
 		C2461E01FED5A727CC2F52BCFB00F8AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C40D0DD055F56C5F5EA832556B85D5CA /* Oberholz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54ACBA2C7B46E3F0199B7E8B6628B5B /* Oberholz-dummy.m */; };
 		E3C67F1976D2B0F75DEE373F57AA1C37 /* Pods-Oberholz_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB50EFD6D055A6D32696A25A6DC4B81 /* Pods-Oberholz_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F011C11CBE69A4871AF359F8AABB51B1 /* OberholzPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F2EB505B7AEC7AE839909668E40DD /* OberholzPresentationController.swift */; };
-		F2B4CAA0DC8E63F7D727C90D32C7C804 /* OberholzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9DF12F8DCAA04CEC438EC6C12B1A4 /* OberholzViewController.swift */; };
 		FF0BAB6D8B7C9BE990A18CB997B78B1E /* Pods-Oberholz_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 576B666B5EFE8FF558DCC3EE7F955151 /* Pods-Oberholz_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5BE62482B1E3146E79FBFD00E55BD76A;
+			remoteGlobalIDString = 25E2C9A5B97C8EE34A9E9CA356B5FA88;
 			remoteInfo = Oberholz;
 		};
 /* End PBXContainerItemProxy section */
@@ -48,13 +45,9 @@
 		629AE498B1F6F91D730FBCF0E50B06C7 /* Oberholz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Oberholz.modulemap; sourceTree = "<group>"; };
 		66CE4AC6E1B73F74CB3066003538F7A3 /* Pods-Oberholz_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Oberholz_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67D9C328FC429A3372A1EB05A9379751 /* Pods-Oberholz_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Oberholz_Tests.modulemap"; sourceTree = "<group>"; };
-		7D1F2EB505B7AEC7AE839909668E40DD /* OberholzPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OberholzPresentationController.swift; sourceTree = "<group>"; };
-		8324A84E1D32776C00B60492 /* OberholzTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OberholzTransitionController.swift; sourceTree = "<group>"; };
-		8324A8501D32777100B60492 /* OberholzAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OberholzAnimationController.swift; sourceTree = "<group>"; };
-		8324A8541D3279FC00B60492 /* OberholzStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OberholzStoryboardSegue.swift; sourceTree = "<group>"; };
+		8324A85A1D32916A00B60492 /* OberholzHandleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OberholzHandleView.swift; sourceTree = "<group>"; };
 		8CB395CE2EC6247D18F90E1C000E6E22 /* Pods-Oberholz_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Oberholz_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94B9DF12F8DCAA04CEC438EC6C12B1A4 /* OberholzViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OberholzViewController.swift; sourceTree = "<group>"; };
 		9616D09FCE3C43264919ECD17F2E1409 /* Oberholz-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Oberholz-prefix.pch"; sourceTree = "<group>"; };
 		96E7A36CC9A75900D2644C5969741095 /* Pods-Oberholz_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Oberholz_Example.release.xcconfig"; sourceTree = "<group>"; };
 		973EA13CB4CA4F6021868B35F3CC00F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +60,7 @@
 		C11E249F12F314F9F3B358BE8808AD23 /* Oberholz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Oberholz-umbrella.h"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E41B85C98A097B1CC9169B7ECBD79DE8 /* Oberholz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Oberholz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92C6AECBE5A84034126BD6A59F266D /* OberholzViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OberholzViewController.swift; sourceTree = "<group>"; };
 		F5DF1A2A57EF1D4C9EE04036FD83D618 /* Pods-Oberholz_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Oberholz_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F7E119E3B12D26BD20528615DFE9610C /* Pods_Oberholz_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oberholz_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE47A198A4ADC0FEA8650D449BA9BE31 /* Pods-Oberholz_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Oberholz_Example-resources.sh"; sourceTree = "<group>"; };
@@ -89,11 +83,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D43E5ADAE806ECAB81F4374DE634D8C /* Frameworks */ = {
+		5438D3490C4C3D2DC3CCC237F975C0C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B257E50A4974BF5547777CAC894ECE59 /* Foundation.framework in Frameworks */,
+				03069DA3579F8CAD4256E749306E5088 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,32 +125,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		22B05033EEBB3C21F795DEEB4F46147F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8324A8501D32777100B60492 /* OberholzAnimationController.swift */,
-				7D1F2EB505B7AEC7AE839909668E40DD /* OberholzPresentationController.swift */,
-				8324A8541D3279FC00B60492 /* OberholzStoryboardSegue.swift */,
-				8324A84E1D32776C00B60492 /* OberholzTransitionController.swift */,
-				94B9DF12F8DCAA04CEC438EC6C12B1A4 /* OberholzViewController.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		44338ED9E83B1D0301B926AB08E32A06 /* Oberholz */ = {
-			isa = PBXGroup;
-			children = (
-				22B05033EEBB3C21F795DEEB4F46147F /* Classes */,
-			);
-			path = Oberholz;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -168,6 +142,23 @@
 				A5E565985C4AB48CD420D8B9691B935C /* Products */,
 				129E8416E90768604E32C57E91F8BEC4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8FB019724E0EE8D35B70A6832DA913DF /* Oberholz */ = {
+			isa = PBXGroup;
+			children = (
+				9C6F245E61A2B397044C8503C1679DA9 /* Classes */,
+			);
+			path = Oberholz;
+			sourceTree = "<group>";
+		};
+		9C6F245E61A2B397044C8503C1679DA9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8324A85A1D32916A00B60492 /* OberholzHandleView.swift */,
+				EB92C6AECBE5A84034126BD6A59F266D /* OberholzViewController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		9D5B89389FF668EC461634FBC193EF5C /* Pods-Oberholz_Tests */ = {
@@ -227,7 +218,7 @@
 		F1AC892C7B98976AE3B04FB5B706C63C /* Oberholz */ = {
 			isa = PBXGroup;
 			children = (
-				44338ED9E83B1D0301B926AB08E32A06 /* Oberholz */,
+				8FB019724E0EE8D35B70A6832DA913DF /* Oberholz */,
 				097325A12B34F0583C61CF7CE0EE8AE7 /* Support Files */,
 			);
 			name = Oberholz;
@@ -237,19 +228,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E4BA618D65D352946B7574FB32EAC09 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C55CAE07F33DB4F76F295D5E519FE4D /* Oberholz-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79C7EF39A96E73DD7DEFBDB1656D1641 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E3C67F1976D2B0F75DEE373F57AA1C37 /* Pods-Oberholz_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E101BB47D675898056E8CC48D71732ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE473EA57A018DB942D6F36E631294E /* Oberholz-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +255,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		25E2C9A5B97C8EE34A9E9CA356B5FA88 /* Oberholz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EA7610D2AF4CDFBE00B5C52551A226 /* Build configuration list for PBXNativeTarget "Oberholz" */;
+			buildPhases = (
+				A2706F950F8A1F41200C0DA78626A92A /* Sources */,
+				5438D3490C4C3D2DC3CCC237F975C0C3 /* Frameworks */,
+				E101BB47D675898056E8CC48D71732ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Oberholz;
+			productName = Oberholz;
+			productReference = E41B85C98A097B1CC9169B7ECBD79DE8 /* Oberholz.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		35CCEC69B46AC4020074466850B4EB2C /* Pods-Oberholz_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8898495470907A59157DA2152F2B8018 /* Build configuration list for PBXNativeTarget "Pods-Oberholz_Tests" */;
@@ -279,23 +287,6 @@
 			name = "Pods-Oberholz_Tests";
 			productName = "Pods-Oberholz_Tests";
 			productReference = 4364BCBCA12049F31A58DE01350F0A19 /* Pods_Oberholz_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5BE62482B1E3146E79FBFD00E55BD76A /* Oberholz */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7715917E19319F987DE980A8D0156A03 /* Build configuration list for PBXNativeTarget "Oberholz" */;
-			buildPhases = (
-				74D98303D2ABBCE46155F2A67311F01F /* Sources */,
-				9D43E5ADAE806ECAB81F4374DE634D8C /* Frameworks */,
-				2E4BA618D65D352946B7574FB32EAC09 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Oberholz;
-			productName = Oberholz;
-			productReference = E41B85C98A097B1CC9169B7ECBD79DE8 /* Oberholz.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C39F37782E69B953EA5C826F57D59EB6 /* Pods-Oberholz_Example */ = {
@@ -337,7 +328,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BE62482B1E3146E79FBFD00E55BD76A /* Oberholz */,
+				25E2C9A5B97C8EE34A9E9CA356B5FA88 /* Oberholz */,
 				C39F37782E69B953EA5C826F57D59EB6 /* Pods-Oberholz_Example */,
 				35CCEC69B46AC4020074466850B4EB2C /* Pods-Oberholz_Tests */,
 			);
@@ -345,24 +336,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74D98303D2ABBCE46155F2A67311F01F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				610ABE1B530AA7A68358CE3178F7FF17 /* Oberholz-dummy.m in Sources */,
-				8324A84F1D32776C00B60492 /* OberholzTransitionController.swift in Sources */,
-				F011C11CBE69A4871AF359F8AABB51B1 /* OberholzPresentationController.swift in Sources */,
-				8324A8551D3279FC00B60492 /* OberholzStoryboardSegue.swift in Sources */,
-				8324A8511D32777100B60492 /* OberholzAnimationController.swift in Sources */,
-				F2B4CAA0DC8E63F7D727C90D32C7C804 /* OberholzViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		76427A7B26F4EFD5D2262565AB321205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1301184A1B201D892935ACF2A063E988 /* Pods-Oberholz_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2706F950F8A1F41200C0DA78626A92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40D0DD055F56C5F5EA832556B85D5CA /* Oberholz-dummy.m in Sources */,
+				AA3F236B10F77617A160834940EAEA5F /* OberholzViewController.swift in Sources */,
+				8324A85B1D32916A00B60492 /* OberholzHandleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,210 +368,13 @@
 		8631C84549C72CC03A78536928772DA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Oberholz;
-			target = 5BE62482B1E3146E79FBFD00E55BD76A /* Oberholz */;
+			target = 25E2C9A5B97C8EE34A9E9CA356B5FA88 /* Oberholz */;
 			targetProxy = BFF693FFA1F103EA9924AC3E629DEBE1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1C8279C68333DED4F53CAC88877C6B4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223C0D61783629542A55B9F130A2C0C9 /* Oberholz.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Oberholz/Oberholz-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Oberholz/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Oberholz/Oberholz.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Oberholz;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		21DA479795B484CDEF65F973D54A3F21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223C0D61783629542A55B9F130A2C0C9 /* Oberholz.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Oberholz/Oberholz-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Oberholz/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Oberholz/Oberholz.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Oberholz;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		30313DE5DAE92B1B0BF9E8F4D8C3FA20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96E7A36CC9A75900D2644C5969741095 /* Pods-Oberholz_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Example/Pods-Oberholz_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Oberholz_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		47D4C2684BBD05AF55C591340D830244 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46FEB8904832940BDB94D091967767CE /* Pods-Oberholz_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Example/Pods-Oberholz_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Oberholz_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD238F0EEF185374615E4C4A62574F0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4458A46E2C8B21D24C2C815140103D3A /* Pods-Oberholz_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Tests/Pods-Oberholz_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Oberholz_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -618,14 +409,211 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EEAFC480D9E1AEDECE73ED3E1B669B5B /* Debug */ = {
+		0F8770B08D0AA109846C478AB3AD291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223C0D61783629542A55B9F130A2C0C9 /* Oberholz.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Oberholz/Oberholz-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Oberholz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Oberholz/Oberholz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Oberholz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18894118AF0536184E40AE7C4EFC70F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E7A36CC9A75900D2644C5969741095 /* Pods-Oberholz_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Example/Pods-Oberholz_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Oberholz_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18FDF341591542586F7070DFE675D553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 223C0D61783629542A55B9F130A2C0C9 /* Oberholz.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Oberholz/Oberholz-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Oberholz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Oberholz/Oberholz.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Oberholz;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30A4412BDE1F6E1FD1E2D713C1CC72BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46FEB8904832940BDB94D091967767CE /* Pods-Oberholz_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Example/Pods-Oberholz_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Oberholz_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DF0DDDE70BFC6D187EF53C4FFC8325E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4458A46E2C8B21D24C2C815140103D3A /* Pods-Oberholz_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Tests/Pods-Oberholz_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Oberholz_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C7B0D540077EF97D702133CF9B188C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0915AF60439EDA75A19A9E9F3C205B6 /* Pods-Oberholz_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -640,7 +628,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Oberholz_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Oberholz_Tests/Pods-Oberholz_Tests.modulemap";
@@ -664,8 +652,8 @@
 		053836EFBB59BB9C57B04746730F5A1C /* Build configuration list for PBXNativeTarget "Pods-Oberholz_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47D4C2684BBD05AF55C591340D830244 /* Debug */,
-				30313DE5DAE92B1B0BF9E8F4D8C3FA20 /* Release */,
+				30A4412BDE1F6E1FD1E2D713C1CC72BA /* Debug */,
+				18894118AF0536184E40AE7C4EFC70F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -673,17 +661,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7715917E19319F987DE980A8D0156A03 /* Build configuration list for PBXNativeTarget "Oberholz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21DA479795B484CDEF65F973D54A3F21 /* Debug */,
-				1C8279C68333DED4F53CAC88877C6B4D /* Release */,
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -691,8 +670,17 @@
 		8898495470907A59157DA2152F2B8018 /* Build configuration list for PBXNativeTarget "Pods-Oberholz_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EEAFC480D9E1AEDECE73ED3E1B669B5B /* Debug */,
-				BD238F0EEF185374615E4C4A62574F0A /* Release */,
+				D9C7B0D540077EF97D702133CF9B188C /* Debug */,
+				8DF0DDDE70BFC6D187EF53C4FFC8325E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EA7610D2AF4CDFBE00B5C52551A226 /* Build configuration list for PBXNativeTarget "Oberholz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FDF341591542586F7070DFE675D553 /* Debug */,
+				0F8770B08D0AA109846C478AB3AD291E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
