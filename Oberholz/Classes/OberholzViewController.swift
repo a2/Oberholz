@@ -68,10 +68,14 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
             // As long as we adknowledge that this is a hack, then it's fine, right?
             // At least we didn't use private APIs. ;)
 
-            if let topLayoutView = detailViewController.topLayoutGuide as? UIView, constraint = topLayoutView.constraintsAffectingLayoutForAxis(.Vertical).lazy.filter(isHeightConstraint).first {
-                constraint.active = false
+            if let layoutView = detailViewController.topLayoutGuide as? UIView, constraint = layoutView.constraintsAffectingLayoutForAxis(.Vertical).lazy.filter(isHeightConstraint).first {
                 detailTopLayoutConstraint = constraint
+            } else if let layoutGuide = detailViewController.topLayoutGuide as? UILayoutGuide, owningView = layoutGuide.owningView, constraint = owningView.constraints.lazy.filter(isHeightConstraint).first {
+                detailTopLayoutConstraint = constraint
+            }
 
+            if let constraint = detailTopLayoutConstraint {
+                constraint.active = false
                 detailViewController.topLayoutGuide.heightAnchor.constraintEqualToConstant(20).active = true
             }
         }
