@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "A semi-modal view controller similar to the one used in the iOS 10 Maps app."
+  s.description      = "A semi-modal view controller similar to the one used in the iOS 10 Control Center."
 
   s.homepage         = 'https://github.com/a2/Oberholz'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.authors           = { 'Alexsander Akers' => 'me@a2.io',  'Patrick Balestra' => 'me@patrickbalestra.com'}
+  s.authors          = { 'Alexsander Akers' => 'me@a2.io',  'Patrick Balestra' => 'me@patrickbalestra.com'}
   s.source           = { :git => 'https://github.com/a2/Oberholz.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
