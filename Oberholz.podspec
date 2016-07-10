@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Oberholz'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Oberholz.'
+  s.summary          = 'A semi-modal view controller.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,21 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "A semi-modal view controller similar to the one used in the iOS 10 Maps app."
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Oberholz'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/a2/Oberholz'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Alexsander Akers' => 'me@a2.io' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Oberholz.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.authors           = { 'Alexsander Akers' => 'me@a2.io',  'Patrick Balestra' => 'me@patrickbalestra.com'}
+  s.source           = { :git => 'https://github.com/a2/Oberholz.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Oberholz/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'Oberholz' => ['Oberholz/Assets/*.png']
   # }
