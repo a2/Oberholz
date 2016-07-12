@@ -157,10 +157,41 @@
                             <outlet property="delegate" destination="rpr-WE-Eie" id="HoH-CG-E1O"/>
                         </connections>
                     </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zp7-59-f2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1496" y="-507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JGu-O2-EDW">
+            <objects>
+                <viewController storyboardIdentifier="EmptyDetailViewController" id="O1u-9b-FM9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTP-tf-AKt"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDi-L4-fhV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LhO-Yz-DHN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Ekn-He-t0l">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ekn-He-t0l" secondAttribute="trailing" id="0bU-QD-U5E"/>
+                            <constraint firstItem="Ekn-He-t0l" firstAttribute="top" secondItem="iTP-tf-AKt" secondAttribute="bottom" id="HFL-hE-ko8"/>
+                            <constraint firstItem="Ekn-He-t0l" firstAttribute="leading" secondItem="LhO-Yz-DHN" secondAttribute="leading" id="f3p-WE-wyC"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qp7-Cb-n1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171" y="-507"/>
         </scene>
     </scenes>
     <resources>
