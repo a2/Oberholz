@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03069DA3579F8CAD4256E749306E5088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		1301184A1B201D892935ACF2A063E988 /* Pods-Oberholz_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F6615B2DCC5ABD59BAC89775822C40 /* Pods-Oberholz_Tests-dummy.m */; };
+		1F91E53A1D33C7CC0021F599 /* OberholzScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91E5391D33C7CC0021F599 /* OberholzScrollView.swift */; };
 		2723B7DA3DDCAD503AD4B496B1B75E6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		42D06502D7A1B0FA5E7226C1A9D99988 /* Pods-Oberholz_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9920B422686992E56BDA0FC939D35FCC /* Pods-Oberholz_Example-dummy.m */; };
 		8324A85B1D32916A00B60492 /* OberholzHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324A85A1D32916A00B60492 /* OberholzHandleView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F91E5391D33C7CC0021F599 /* OberholzScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OberholzScrollView.swift; sourceTree = "<group>"; };
 		223C0D61783629542A55B9F130A2C0C9 /* Oberholz.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Oberholz.xcconfig; sourceTree = "<group>"; };
 		259B1C60EB0EC7D25228605C48DBBC02 /* Pods-Oberholz_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Oberholz_Example.modulemap"; sourceTree = "<group>"; };
 		2AC206AA3DF94546FD1CE1424DD9365E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8324A85A1D32916A00B60492 /* OberholzHandleView.swift */,
+				1F91E5391D33C7CC0021F599 /* OberholzScrollView.swift */,
 				EB92C6AECBE5A84034126BD6A59F266D /* OberholzViewController.swift */,
 			);
 			path = Classes;
@@ -350,6 +353,7 @@
 			files = (
 				C40D0DD055F56C5F5EA832556B85D5CA /* Oberholz-dummy.m in Sources */,
 				AA3F236B10F77617A160834940EAEA5F /* OberholzViewController.swift in Sources */,
+				1F91E53A1D33C7CC0021F599 /* OberholzScrollView.swift in Sources */,
 				8324A85B1D32916A00B60492 /* OberholzHandleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

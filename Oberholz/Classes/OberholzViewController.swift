@@ -4,16 +4,16 @@ public protocol OberholzViewControllerDelegate: class {
 
 }
 
-public final class OberholzViewController: UIViewController, UIViewControllerTransitioningDelegate {
+public final class OberholzViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTransitioningDelegate {
     public var masterViewController: UIViewController
     public var detailViewController: UIViewController
 
     public weak var delegate: OberholzViewControllerDelegate?
-    let detailContainerView = UIView()
+    let detailScrollView = OberholzScrollView()
     var detailTopLayoutConstraint: NSLayoutConstraint?
     let handleView = OberholzHandleView()
-    var detailContainerStartingFrame: CGRect?
-
+    var childScrollViewStartingContentOffsetY: CGFloat?
+    
     public init(masterViewController: UIViewController, detailViewController: UIViewController) {
         self.masterViewController = masterViewController
         self.detailViewController = detailViewController
@@ -29,33 +29,43 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
         fatalError("init(coder:) has not been implemented")
     }
 
-    func recognizedPanGesture(gesture: UIPanGestureRecognizer) {
-        switch gesture.state {
-        case .Began:
-            detailContainerStartingFrame = detailContainerView.frame
+    func childScrollViewRecognizedPanGesture(gesture: UIPanGestureRecognizer) {
+        let scrollView = gesture.view as! UIScrollView
 
-        case .Changed:
-            let translation = gesture.translationInView(gesture.view)
-
-            let minY: CGFloat = 40
-            let maxY = view.bounds.size.height - 100
-
-            var newFrame = detailContainerStartingFrame!
-            let newY = newFrame.origin.y + translation.y
-            newFrame.origin.y = min(max(newY, minY), maxY)
-            newFrame.size.height = view.bounds.size.height - newFrame.origin.y
-            detailContainerView.frame = newFrame
-
-            if let scrollView = gesture.view as? UIScrollView {
-                scrollView.contentOffset.y = max(minY - newY, -20)
+        if detailScrollView.contentOffset.y <= 0 || detailScrollView.contentOffset.y >= detailScrollView.contentSize.height - detailScrollView.frame.size.height {
+            if childScrollViewStartingContentOffsetY == nil {
+                childScrollViewStartingContentOffsetY = scrollView.contentOffset.y
             }
 
-        case .Ended:
-            gesture.enabled = false
-            gesture.enabled = true
+            var contentOffset = scrollView.contentOffset
+            contentOffset.y = childScrollViewStartingContentOffsetY! - gesture.translationInView(scrollView).y
+            scrollView.setContentOffset(contentOffset, animated: false)
+        } else {
+            scrollView.setContentOffset(CGPoint(x: 0, y: -20), animated: false)
+            gesture.setTranslation(.zero, inView: scrollView)
+            childScrollViewStartingContentOffsetY = nil
+        }
+    }
 
-        default:
-            break
+    func detailScrollViewRecognizedPanGesture(gesture: UIPanGestureRecognizer) {
+        var contentOffset = detailScrollView.contentOffset
+
+        let changed: Bool
+        let minY: CGFloat = 0
+        let maxY: CGFloat = detailScrollView.contentSize.height - detailScrollView.frame.size.height
+
+        if contentOffset.y < minY {
+            contentOffset.y = minY
+            changed = true
+        } else if contentOffset.y > maxY {
+            contentOffset.y = maxY
+            changed = true
+        } else {
+            changed = false
+        }
+
+        if changed {
+            detailScrollView.setContentOffset(contentOffset, animated: false)
         }
     }
 
@@ -75,24 +85,37 @@ public final class OberholzViewController: UIViewController, UIViewControllerTra
             handleView.fillColor = UIColor(white: 0, alpha: 0.5)
         }
 
-        detailContainerView.addSubview(detailViewController.view)
-        detailContainerView.addSubview(handleView)
+        detailScrollView.delegate = self
+        detailScrollView.panGestureRecognizer.addTarget(self, action: #selector(detailScrollViewRecognizedPanGesture))
+        detailScrollView.showsVerticalScrollIndicator = false
+        detailScrollView.addSubview(detailViewController.view)
+        detailScrollView.addSubview(handleView)
 
-        view.addSubview(detailContainerView)
-        detailContainerView.frame = view.bounds.divide(100, fromEdge: .MaxYEdge).slice
-        handleView.frame = detailContainerView.bounds.divide(20, fromEdge: .MinYEdge).slice
-        handleView.autoresizingMask = [.FlexibleWidth, .FlexibleBottomMargin]
+        var contentSize = view.bounds.size
+        contentSize.height = 2 * contentSize.height - 140
+        detailScrollView.contentSize = contentSize
 
-        detailViewController.view.frame = detailContainerView.bounds
+        view.addSubview(detailScrollView)
+        detailScrollView.frame = view.bounds
+
+        var detailContainerFrame = view.bounds
+        detailContainerFrame.origin.y = view.bounds.size.height - 100
+        detailContainerFrame.size.height -= 40
+        detailViewController.view.frame = detailContainerFrame
         detailViewController.view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+
+        handleView.autoresizingMask = [.FlexibleWidth, .FlexibleBottomMargin]
+        handleView.frame = detailContainerFrame.divide(20, fromEdge: .MinYEdge).slice
+        handleView.userInteractionEnabled = false
 
         if let scrollView = detailViewController.view as? UIScrollView {
             scrollView.contentInset.top = 20
             scrollView.contentOffset = CGPoint(x: 0, y: -20)
-            scrollView.panGestureRecognizer.addTarget(self, action: #selector(recognizedPanGesture))
+            scrollView.panGestureRecognizer.addTarget(self, action: #selector(childScrollViewRecognizedPanGesture))
+            scrollView.addGestureRecognizer(detailScrollView.panGestureRecognizer)
+            detailScrollView.childScrollView = scrollView
         } else {
-            let panGesture = UIPanGestureRecognizer(target: self, action: #selector(recognizedPanGesture))
-            view.addGestureRecognizer(panGesture)
+            detailScrollView.childScrollView = nil
         }
     }
 
