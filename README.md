@@ -1,3 +1,5 @@
+# This project is a WIP but hasn't been finished yet.
+
 # Oberholz
 
 [![CI Status](http://img.shields.io/travis/a2/Oberholz.svg?style=flat)](https://travis-ci.org/a2/Oberholz)
